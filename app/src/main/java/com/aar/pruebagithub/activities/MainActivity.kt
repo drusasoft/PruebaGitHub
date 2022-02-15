@@ -2,6 +2,7 @@ package com.aar.pruebagithub.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.aar.pruebagithub.R
 import com.aar.pruebagithub.databinding.ActivityMainBinding
 
@@ -25,7 +26,9 @@ class MainActivity : AppCompatActivity()
         supportActionBar!!.setDisplayShowHomeEnabled(true)
         supportActionBar!!.setHomeButtonEnabled(true)
 
-        binding.btnBaseDatos.setOnClickListener {  }
+        binding.btnBaseDatos.setOnClickListener {
+            Toast.makeText(this, "Culo de pavo", Toast.LENGTH_LONG).show()
+        }
     }
 
 }
