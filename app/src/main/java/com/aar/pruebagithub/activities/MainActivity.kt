@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity()
         supportActionBar!!.setHomeButtonEnabled(true)
 
         binding.btnBaseDatos.setOnClickListener {
-            Toast.makeText(this, "Culo de pavo", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Culo", Toast.LENGTH_LONG).show()
         }
     }
 
