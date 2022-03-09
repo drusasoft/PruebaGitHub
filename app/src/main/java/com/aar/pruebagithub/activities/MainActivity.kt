@@ -1,9 +1,8 @@
 package com.aar.pruebagithub.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import com.aar.pruebagithub.R
 import com.aar.pruebagithub.databinding.ActivityMainBinding
 
 
@@ -14,6 +13,7 @@ class MainActivity : AppCompatActivity()
 {
 
     private lateinit var binding: ActivityMainBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -27,7 +27,8 @@ class MainActivity : AppCompatActivity()
         supportActionBar!!.setHomeButtonEnabled(true)
 
         binding.btnBaseDatos.setOnClickListener {
-            Toast.makeText(this, "Culo", Toast.LENGTH_LONG).show()
+            val intent = Intent(this, PantallaPruebaBD::class.java)
+            startActivity(intent)
         }
     }
 

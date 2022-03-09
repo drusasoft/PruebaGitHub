@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">PruebaGitHub</string>
+
+    <!--Pantalla Prueba BD-->
+    <string name="titPantallaPruebaBD">Prueba BD</string>
+    <string name="titPagina_1">Insertar</string>
+    <string name="titPagina_2">Mostrar</string>
+    <!--FIn pantalla Prueba BD-->
 </resources>
