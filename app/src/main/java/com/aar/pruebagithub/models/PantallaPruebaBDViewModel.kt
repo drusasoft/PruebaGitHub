@@ -1,15 +1,21 @@
 package com.aar.pruebagithub.models
 
 import android.util.Log
-import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.aar.pruebagithub.database.PersonaDB
+import com.aar.pruebagithub.database.PersonaDao
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.launch
 
-class PantallaPruebaBDViewModel():ViewModel()
+
+
+
+
+class PantallaPruebaBDViewModel(private val dataBase:PersonaDao):ViewModel()
 {
 
     //**************Coroutina para realizar Operaciones en la BD*********************
@@ -25,16 +31,14 @@ class PantallaPruebaBDViewModel():ViewModel()
 
 
     init {
-        Log.e("PantallaPruebaBDViewModel", "Init")
         _pruebaLiveData.value = "Soy un Inutil"
     }
 
 
-    fun pruebaCulo(){
-        Log.e("Yo", "Soy un Inutil Fracasado")
-        _pruebaLiveData.value = "Soy un Inutil Fracasado"
+    //Se insertan los dato de una persona en la BD
+    fun insertarDatosBD(datosPersona:PersonaDB)
+    {
+        coroutineScope.launch { dataBase.insertarPersona(datosPersona) }
     }
-
-    fun pruebaCulo2(){ Log.e("Yo", "Toda mi familia me ve como un mierda")}
 
 }

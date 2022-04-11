@@ -33,7 +33,7 @@
                     android:layout_marginLeft="15dp"
                     android:textColor="@color/purple_700"
                     android:textSize="18sp"
-                    android:text="Nuevo Registro"/>
+                    android:text="@string/titFragmentInsertar"/>
 
                 <View
                     android:layout_width="match_parent"
@@ -50,7 +50,7 @@
                     android:layout_marginRight="10dp"
                     android:maxLength="10"
                     android:textColor="@color/purple_700"
-                    android:hint="Dni"/>
+                    android:hint="@string/hintDni"/>
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/editTextNombre"
@@ -61,7 +61,7 @@
                     android:layout_marginRight="10dp"
                     android:maxLength="20"
                     android:textColor="@color/purple_700"
-                    android:hint="Nombre"/>
+                    android:hint="@string/hintNombre"/>
 
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -73,7 +73,7 @@
                     android:layout_marginRight="10dp"
                     android:maxLength="60"
                     android:textColor="@color/purple_700"
-                    android:hint="Apellidos"/>
+                    android:hint="@string/hintApellidos"/>
 
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -85,7 +85,7 @@
                     android:layout_marginRight="10dp"
                     android:maxLength="2"
                     android:textColor="@color/purple_700"
-                    android:hint="Edad"
+                    android:hint="@string/hintEdad"
                     android:inputType="number"/>
 
                 <View
@@ -104,9 +104,9 @@
                     android:layout_gravity="center"
                     android:fontFamily="@font/orbitron_black"
                     android:textSize="18sp"
-                    android:textColor="@color/purple_700"
-                    app:strokeColor="@color/purple_700"
-                    android:text="Insertar Registro"/>
+                    android:textColor="@color/color_texto_botones"
+                    app:strokeColor="@color/color_texto_botones"
+                    android:text="@string/btnInsertarBD"/>
 
             </LinearLayout>
 

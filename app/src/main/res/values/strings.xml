@@ -5,5 +5,13 @@
     <string name="titPantallaPruebaBD">Prueba BD</string>
     <string name="titPagina_1">Insertar</string>
     <string name="titPagina_2">Mostrar</string>
+    <string name="titFragmentInsertar">Nuevo Registro</string>
+    <string name="hintDni">Dni</string>
+    <string name="hintNombre">Nombre</string>
+    <string name="hintApellidos">Apellidos</string>
+    <string name="hintEdad">Edad</string>
+    <string name="btnInsertarBD">Insertar Registro</string>
     <!--FIn pantalla Prueba BD-->
+
+
 </resources>
