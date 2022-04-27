@@ -3,6 +3,7 @@ package com.aar.pruebagithub.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.aar.pruebagithub.databinding.ActivityMainBinding
 
 
@@ -26,10 +27,22 @@ class MainActivity : AppCompatActivity()
         supportActionBar!!.setDisplayShowHomeEnabled(true)
         supportActionBar!!.setHomeButtonEnabled(true)
 
-        binding.btnBaseDatos.setOnClickListener {
-            val intent = Intent(this, PantallaPruebaBD::class.java)
-            startActivity(intent)
-        }
+    }
+
+
+
+    fun irPantallaBaseDatos(view:View)
+    {
+        val intent = Intent(this, PantallaPruebaBD::class.java)
+        startActivity(intent)
+    }
+
+
+
+    fun irPantallaWS(view:View)
+    {
+        val intent = Intent(this, PantallaPruebaWS::class.java)
+        startActivity(intent)
     }
 
 }

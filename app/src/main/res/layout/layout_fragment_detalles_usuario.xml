@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageViewDetalleUsuario"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/purple_700"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/titNombreUsuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/purple_700"
+                        android:fontFamily="@font/orbitron_black"
+                        android:text="@string/titNombreUsuario"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtNombreUsuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/orbitron"
+                        android:textColor="@color/purple_500"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        app:layout_constraintStart_toEndOf="@+id/titNombreUsuario"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/titNombreUsuario"/>
+
+                    <TextView
+                        android:id="@+id/titApellidosUsuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/orbitron_black"
+                        android:text="@string/titApellidosUsuario"
+                        android:textColor="@color/purple_700"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/titNombreUsuario" />
+
+                    <TextView
+                        android:id="@+id/txtApellidosUsuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/orbitron"
+                        android:textColor="@color/purple_500"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/titApellidosUsuario"
+                        app:layout_constraintStart_toEndOf="@+id/titApellidosUsuario" />
+
+                    <TextView
+                        android:id="@+id/titGeneroUsuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/orbitron_black"
+                        android:text="@string/titGeneroUsuario"
+                        android:textColor="@color/purple_700"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/titApellidosUsuario" />
+
+                    <TextView
+                        android:id="@+id/txtGeneroUsuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/orbitron"
+                        android:textColor="@color/purple_500"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/titGeneroUsuario"
+                        app:layout_constraintStart_toEndOf="@+id/titGeneroUsuario" />
+
+                    <TextView
+                        android:id="@+id/titEmailUsuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/orbitron_black"
+                        android:text="@string/titEmailUsuario"
+                        android:textColor="@color/purple_700"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/titGeneroUsuario" />
+
+                    <TextView
+                        android:id="@+id/txtEmailUsuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/orbitron"
+                        android:textColor="@color/purple_500"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/titEmailUsuario"
+                        app:layout_constraintStart_toEndOf="@+id/titEmailUsuario" />
+
+                    <TextView
+                        android:id="@+id/titCiudadUsuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/orbitron_black"
+                        android:text="@string/titCiudadUsuario"
+                        android:textColor="@color/purple_700"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/titEmailUsuario"/>
+
+                    <TextView
+                        android:id="@+id/txtCiudadUsuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/orbitron"
+                        android:textColor="@color/purple_500"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/titCiudadUsuario"
+                        app:layout_constraintStart_toEndOf="@+id/titCiudadUsuario" />
+
+                    <TextView
+                        android:id="@+id/titPaisUsuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/orbitron_black"
+                        android:text="@string/titPaisUsuario"
+                        android:textColor="@color/purple_700"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/titCiudadUsuario" />
+
+                    <TextView
+                        android:id="@+id/txtPaisUsuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/orbitron"
+                        android:textColor="@color/purple_500"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/titPaisUsuario"
+                        app:layout_constraintStart_toEndOf="@+id/titPaisUsuario" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+
+</LinearLayout>

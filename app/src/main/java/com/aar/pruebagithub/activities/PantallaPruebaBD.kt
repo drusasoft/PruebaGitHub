@@ -2,11 +2,13 @@ package com.aar.pruebagithub.activities
 
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import androidx.viewpager2.widget.ViewPager2
 import com.aar.pruebagithub.R
 import com.aar.pruebagithub.databinding.LayoutPantallaPruebabdBinding
 import com.aar.pruebagithub.fragments.ViewPagerFragment
@@ -45,6 +47,20 @@ class PantallaPruebaBD: AppCompatActivity()
         }.attach()
 
 
+        //Se registra un listener que se ejecuta cuando se campia dde pagina el el ViewPager2
+        binding.viewPagerBD.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback(){
+
+            override fun onPageSelected(position: Int) {
+                super.onPageSelected(position)
+
+                when(position)
+                {
+                    0->{ pagerFragment.deseleccionarTodos()}
+                }
+
+            }
+        })
+
     }
 
 
@@ -58,6 +74,12 @@ class PantallaPruebaBD: AppCompatActivity()
         }
 
         return super.onOptionsItemSelected(item)
+    }
+
+
+    //Metodo llamado desde el Fragment ViewPagerFragment para mostrar en la ToolBar el numero de elementos Seleccionados
+    fun setTituloToolBar(titulo:String){
+        supportActionBar!!.setTitle(titulo)
     }
 
 

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutParentRecyclerPersonas"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="15dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:clickable="true"
+    android:background="@drawable/borde_recycler_personas">
+
+    <TextView
+        android:id="@+id/txtRecyclerPersonasNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="@font/orbitron_black"
+        android:textColor="@color/color_texto_recycler"
+        android:lines="1"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/txtRecyclerPersonasApellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="@font/orbitron_black"
+        android:textColor="@color/color_texto_recycler"
+        android:lines="1"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+</LinearLayout>

@@ -9,7 +9,6 @@
         android:id="@+id/toolBarPantallaPrueba"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:elevation="4dp"
         android:background="@color/purple_500"
         android:theme="@style/miToolBarStyle"
         app:titleTextAppearance="@style/miToolbarTextStyle"
@@ -22,6 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="top"
         android:background="@color/purple_500"
+        app:tabTextAppearance="@style/miTabLayoutTextStyle"
         app:tabTextColor="@color/purple_700"
         app:tabSelectedTextColor="@color/white"
         app:tabMode="fixed"/>

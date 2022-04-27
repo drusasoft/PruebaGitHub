@@ -22,4 +22,7 @@ class PruebaGitHub:Application()
     //Se obtiene la BD de Personas
     fun getPersonaDataBase() = database.personaDao()
 
+    //Se obtiene la BD de Usuarios
+    fun getUsuarioDataBase() = database.usuarioDao()
+
 }

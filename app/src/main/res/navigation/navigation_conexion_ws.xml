@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_conexion_ws"
+    app:startDestination="@id/fragmentUsuarios">
+
+
+    <fragment
+        android:id="@+id/fragmentUsuarios"
+        android:name="com.aar.pruebagithub.fragments.FragmentUsuarios"
+        android:label="FragmentUsuarios">
+
+        <action
+            android:id="@+id/irFragmentDetallesUsuario"
+            app:destination="@id/fragmentDetallesUsuario"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentDetallesUsuario"
+        android:name="com.aar.pruebagithub.fragments.FragmentDetallesUsuario"
+        android:label="FragmentDetallesUsuario" />
+
+</navigation>

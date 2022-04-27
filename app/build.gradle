@@ -46,9 +46,11 @@ dependencies {
 
     def version_room = "2.4.2"
     def version_coroutine = "1.4.1"
-    def nav_version = "2.4.1"
+    def nav_version = "2.4.2"
     def picasso_version = "2.71828"
     def photo_view_version = "2.3.0"
+    def version_retrofit = "2.9.0"
+    def version_gson = "2.8.6"
 
 
 
@@ -78,6 +80,15 @@ dependencies {
     //Libreriras para Navigation
     implementation "androidx.navigation:navigation-fragment:$nav_version"
     implementation "androidx.navigation:navigation-ui:$nav_version"
+
+    //Libreria Retrofif para conexion con WS
+    implementation "com.squareup.retrofit2:retrofit: $version_retrofit"
+    implementation "com.squareup.retrofit2:converter-scalars:$version_retrofit"//Esta libreria de retrofit devuelve el Json en formato String
+    implementation "com.squareup.retrofit2:converter-gson:$version_retrofit"//Conversor de Retrofit para usar Gson
+
+    //Gson(Libreria para parsear Json)
+    implementation "com.google.code.gson:gson:$version_gson"
+
 
     //Libreria Picasso, para mostrar imagenes
     implementation "com.squareup.picasso:picasso:$picasso_version"

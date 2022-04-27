@@ -20,6 +20,8 @@ interface PersonaDao
     fun modificarPersona(persona:PersonaDB)
 
     @Query("Select * from Personas")
-    fun getPersonas():LiveData<List<PersonaDB>>
+    fun getPersonasLive():LiveData<List<PersonaDB>>
 
+    @Query("Update Personas set seleccionado = 0")
+    fun deseleccionarTodos()
 }

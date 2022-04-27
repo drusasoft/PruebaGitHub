@@ -18,5 +18,8 @@ data class PersonaDB(
     var apellidos: String,
 
     @ColumnInfo(name = "edad")
-    var edad: Int
+    var edad: Int,
+
+    @ColumnInfo(name = "seleccionado")
+    var seleccionado:Boolean
 )
