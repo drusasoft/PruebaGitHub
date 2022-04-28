@@ -22,13 +22,14 @@
     <string name="titFragmentMostrarUsuarios">Usuarios</string>
     <string name="titFragmentDetalleUsuario">Detalle Usuario</string>
     <string name="titNombre">titNombreUsuario</string>
-
     <string name="titNombreUsuario">Nombre</string>
     <string name="titApellidosUsuario">Apellidos</string>
     <string name="titGeneroUsuario">Genero</string>
     <string name="titEmailUsuario">Email</string>
     <string name="titCiudadUsuario">Ciudad</string>
     <string name="titPaisUsuario">Pais</string>
+    <string name="btnConectar">Conectar</string>
+    <string name="btnBorrar">Borrar</string>
     <!--Fin Pantalla Prueba WS-->
 
 

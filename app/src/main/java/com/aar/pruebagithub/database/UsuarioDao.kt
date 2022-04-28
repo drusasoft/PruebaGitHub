@@ -23,4 +23,8 @@ interface UsuarioDao {
 
     @Query("Select * from Usuarios")
     fun getUsuariosLive():LiveData<List<UsuarioDB>>
+
+    @Query("Update Usuarios set seleccionado = 0")
+    fun deseleccionarUsuarios()
+
 }

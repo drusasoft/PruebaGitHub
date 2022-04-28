@@ -41,5 +41,9 @@ data class UsuarioDB(
     var imagenMedium:String,
 
     @ColumnInfo(name = "imagenBig")
-    var imagenBig:String
+    var imagenBig:String,
+
+    @ColumnInfo(name = "seleccionado")
+    var seleccionado:Boolean
+
 ) : Parcelable

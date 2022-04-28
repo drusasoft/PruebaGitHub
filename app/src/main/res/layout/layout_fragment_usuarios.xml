@@ -11,6 +11,25 @@
         android:layout_marginTop="30dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btnBorrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btnBorrar"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:backgroundTint="@color/purple_700"
+        app:icon="@drawable/ic_delete_24"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerUsuarios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="@color/white" />
+
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/btnConexion"
         android:layout_width="wrap_content"
@@ -19,13 +38,13 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Conectar"
+        android:text="@string/btnConectar"
         android:textColor="@color/white"
         app:backgroundTint="@color/purple_700"
         app:icon="@drawable/ic_download_24"
         app:iconTint="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/recyclerUsuarios"
         app:layout_constraintEnd_toEndOf="parent"
-        app:rippleColor="@color/white" />
+        app:rippleColor="@color/white"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

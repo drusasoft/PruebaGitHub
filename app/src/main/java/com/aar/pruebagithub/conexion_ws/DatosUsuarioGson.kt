@@ -57,7 +57,7 @@ fun DatosUsuarioGson.toDatosUsuarioDB():List<UsuarioDB>
         if(it.id.value != null)
         {
             val usuarioDB = UsuarioDB(it.id.value, it.name.first, it.name.last, it.gender, it.email,
-            it.location.city, it.location.state, it.location.country, it.picture.thumbnail, it.picture.medium, it.picture.large)
+            it.location.city, it.location.state, it.location.country, it.picture.thumbnail, it.picture.medium, it.picture.large, false)
 
             listaUsuariosDB.add(usuarioDB)
         }
